@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Grinch</string>
+
+    <string name="main.btn.temagrinch">Tema Grinch</string>
+    <string name="main.btn.agenda">Agenda</string>
+    <string name="main.btn.atrevidos">Atrevidos</string>
+    <string name="main.btn.verde">Verde</string>
+    <string name="main.btn.detesto">Te Destesto..!</string>
+    <string name="main.btn.motivacion">Motivacion.!</string>
+    <string name="main.btn.muybienire">Muy bien ire.!</string>
+</resources>

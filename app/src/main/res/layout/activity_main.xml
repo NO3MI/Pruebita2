@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo5"
+    android:orientation="vertical"
+    tools:context="com.example.usuario.navidadconelgrinch.MainActivity">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="290dp">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="240dp"
+            android:layout_height="280dp"
+            android:text="Tema Grinch"
+            android:textAllCaps="false"
+            android:onClick="temaGrinch"
+            android:background="@drawable/grinch2"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:text="PRESIONA LAS IMAGENES"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="2">
+
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="3"
+                android:nestedScrollingEnabled="true"
+                android:orientation="horizontal">
+                <ImageView
+                    android:text="Agenda"
+                    android:layout_width="125dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="3dp"
+                    android:textAllCaps="false"
+                    android:layout_gravity="fill"
+                    android:layout_columnWeight="1"
+                    android:background="@drawable/carita1"
+                    android:onClick="agenda"/>
+                <ImageView
+                    android:text="Atrevidos"
+                    android:layout_width="125dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_gravity="fill"
+                    android:layout_columnWeight="1"
+                    android:background="@drawable/carita"
+                    android:textAllCaps="false"
+                    android:onClick="atrevidos"/>
+                <ImageView
+                    android:text="Verde"
+                    android:layout_width="125dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_gravity="fill"
+                    android:layout_columnWeight="1"
+                    android:background="@drawable/carita2"
+                    android:textAllCaps="false"
+                    android:onClick="verde"/>
+
+
+
+
+                <Button
+                    android:text="Te Destesto..!"
+                    android:layout_columnWeight="1"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="6dp"
+                    android:textSize="15dp"
+                    android:textColor="@android:color/white"
+                    android:background="@android:color/holo_blue_dark"
+                    android:textAllCaps="false"
+                    android:onClick="teDetesto"/>
+                <Button
+                    android:text="Motivacion.!"
+                    android:layout_columnWeight="1"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="6dp"
+                    android:textSize="15dp"
+                    android:textColor="@android:color/white"
+                    android:background="@android:color/holo_blue_dark"
+                    android:textAllCaps="false"
+                    android:onClick="motivacion"/>
+                <Button
+                    android:text="Muy bien ire.!"
+                    android:layout_columnWeight="1"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="6dp"
+                    android:textSize="15dp"
+                    android:textColor="@android:color/white"
+                    android:background="@android:color/holo_blue_dark"
+                    android:textAllCaps="false"
+                    android:onClick="muyBienIre"/>
+            </GridLayout>
+
+        </HorizontalScrollView>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
